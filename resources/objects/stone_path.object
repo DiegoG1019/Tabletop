@@ -1,0 +1,10 @@
+object = {
+	
+  graphic = {"objects/stone_path","anim"},
+	update  = function() end,
+	size    = {32,32},
+	wgh     = math.huge,
+	hp      = math.huge
+	
+}
+return object

@@ -1,0 +1,9 @@
+object = {
+	
+	anim   = "deco/rose",
+	size   = {25,20},
+	hp     = 1
+	
+}
+
+return object

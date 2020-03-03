@@ -1,0 +1,305 @@
+local p = 32
+local c = 0
+local cl = 0
+
+local anim = {
+  
+  texture = "donnel",
+	framerate = .1,
+  rewind = true
+
+}
+
+anim.red = {
+    
+		normal = {
+    -- x y w h
+ 			{p*(0+c),0,0,0}
+		},
+    
+    idle = {
+      
+      {p*(0+c),0,p,p},
+      {p*(1+c),0,p,p},
+      {p*(2+c),0,p,p},
+      {p*(3+c),0,p,p},
+      
+      {p*(0+c),p,p,p},
+      {p*(1+c),p,p,p},
+      {p*(2+c),p,p,p},
+      {p*(3+c),p,p,p},
+      
+      rewind = true
+      
+    },
+    
+    move_left = {
+      
+      {p*(0+c),p*2,p,p},
+      {p*(1+c),p*2,p,p},
+      {p*(2+c),p*2,p,p},
+      {p*(3+c),p*2,p,p}
+      
+    },
+    
+    move_right = {
+      
+      {p*(0+c),p*3,p,p},
+      {p*(1+c),p*3,p,p},
+      {p*(2+c),p*3,p,p},
+      {p*(3+c),p*3,p,p}
+      
+    },
+    
+    move_down = {
+      
+      {p*(0+c),p*4,p,p},
+      {p*(1+c),p*4,p,p},
+      {p*(2+c),p*4,p,p},
+      {p*(3+c),p*4,p,p}
+      
+    },
+    
+    move_up = {
+      
+      {p*(0+c),p*5,p,p},
+      {p*(1+c),p*5,p,p},
+      {p*(2+c),p*5,p,p},
+      {p*(3+c),p*5,p,p}
+      
+    },
+    
+    move_downleft = {
+      
+      {p*(0+c),p*6,p,p},
+      {p*(1+c),p*6,p,p},
+      {p*(2+c),p*6,p,p},
+      {p*(3+c),p*6,p,p}
+      
+    },
+    
+    move_downright = {
+      
+      {p*(0+c),p*7,p,p},
+      {p*(1+c),p*7,p,p},
+      {p*(2+c),p*7,p,p},
+      {p*(3+c),p*7,p,p}
+      
+    },
+    
+    move_upleft = {
+      
+      {p*(0+c),p*8,p,p},
+      {p*(1+c),p*8,p,p},
+      {p*(2+c),p*8,p,p},
+      {p*(3+c),p*8,p,p}
+      
+    },
+    
+    move_upright = {
+      
+      {p*(0+c),p*9,p,p},
+      {p*(1+c),p*9,p,p},
+      {p*(2+c),p*9,p,p},
+      {p*(3+c),p*9,p,p}
+      
+    }
+    
+  }
+	
+  c=4
+anim.blue = {
+    
+		normal = {
+    -- x y w h
+ 			{p*(0+c),0,0,0}
+		},
+    
+    idle = {
+      
+      {p*(0+c),p*(0+cl),p,p},
+      {p*(1+c),p*(0+cl),p,p},
+      {p*(2+c),p*(0+cl),p,p},
+      {p*(3+c),p*(0+cl),p,p},
+      
+      {p*(0+c),p*(1+cl),p,p},
+      {p*(1+c),p*(1+cl),p,p},
+      {p*(2+c),p*(1+cl),p,p},
+      {p*(3+c),p*(1+cl),p,p},
+      
+      rewind = true
+      
+    },
+    
+    move_left = {
+      
+      {p*(0+c),p*2,p,p},
+      {p*(1+c),p*2,p,p},
+      {p*(2+c),p*2,p,p},
+      {p*(3+c),p*2,p,p}
+      
+    },
+    
+    move_right = {
+      
+      {p*(0+c),p*3,p,p},
+      {p*(1+c),p*3,p,p},
+      {p*(2+c),p*3,p,p},
+      {p*(3+c),p*3,p,p}
+      
+    },
+    
+    move_down = {
+      
+      {p*(0+c),p*4,p,p},
+      {p*(1+c),p*4,p,p},
+      {p*(2+c),p*4,p,p},
+      {p*(3+c),p*4,p,p}
+      
+    },
+    
+    move_up = {
+      
+      {p*(0+c),p*5,p,p},
+      {p*(1+c),p*5,p,p},
+      {p*(2+c),p*5,p,p},
+      {p*(3+c),p*5,p,p}
+      
+    },
+    
+    move_downleft = {
+      
+      {p*(0+c),p*6,p,p},
+      {p*(1+c),p*6,p,p},
+      {p*(2+c),p*6,p,p},
+      {p*(3+c),p*6,p,p}
+      
+    },
+    
+    move_downright = {
+      
+      {p*(0+c),p*7,p,p},
+      {p*(1+c),p*7,p,p},
+      {p*(2+c),p*7,p,p},
+      {p*(3+c),p*7,p,p}
+      
+    },
+    
+    move_upleft = {
+      
+      {p*(0+c),p*8,p,p},
+      {p*(1+c),p*8,p,p},
+      {p*(2+c),p*8,p,p},
+      {p*(3+c),p*8,p,p}
+      
+    },
+    
+    move_upright = {
+      
+      {p*(0+c),p*9,p,p},
+      {p*(1+c),p*9,p,p},
+      {p*(2+c),p*9,p,p},
+      {p*(3+c),p*9,p,p}
+      
+    }
+    
+  }
+
+c = 8
+anim.green = {
+    
+		normal = {
+    -- x y w h
+ 			{p*(0+c),0,0,0}
+		},
+    
+    idle = {
+      
+      {p*(0+c),0,p,p},
+      {p*(1+c),0,p,p},
+      {p*(2+c),0,p,p},
+      {p*(3+c),0,p,p},
+      
+      {p*(0+c),p,p,p},
+      {p*(1+c),p,p,p},
+      {p*(2+c),p,p,p},
+      {p*(3+c),p,p,p},
+      
+      rewind = true
+      
+    },
+    
+    move_left = {
+      
+      {p*(0+c),p*2,p,p},
+      {p*(1+c),p*2,p,p},
+      {p*(2+c),p*2,p,p},
+      {p*(3+c),p*2,p,p}
+      
+    },
+    
+    move_right = {
+      
+      {p*(0+c),p*3,p,p},
+      {p*(1+c),p*3,p,p},
+      {p*(2+c),p*3,p,p},
+      {p*(3+c),p*3,p,p}
+      
+    },
+    
+    move_down = {
+      
+      {p*(0+c),p*4,p,p},
+      {p*(1+c),p*4,p,p},
+      {p*(2+c),p*4,p,p},
+      {p*(3+c),p*4,p,p}
+      
+    },
+    
+    move_up = {
+      
+      {p*(0+c),p*5,p,p},
+      {p*(1+c),p*5,p,p},
+      {p*(2+c),p*5,p,p},
+      {p*(3+c),p*5,p,p}
+      
+    },
+    
+    move_downleft = {
+      
+      {p*(0+c),p*6,p,p},
+      {p*(1+c),p*6,p,p},
+      {p*(2+c),p*6,p,p},
+      {p*(3+c),p*6,p,p}
+      
+    },
+    
+    move_downright = {
+      
+      {p*(0+c),p*7,p,p},
+      {p*(1+c),p*7,p,p},
+      {p*(2+c),p*7,p,p},
+      {p*(3+c),p*7,p,p}
+      
+    },
+    
+    move_upleft = {
+      
+      {p*(0+c),p*8,p,p},
+      {p*(1+c),p*8,p,p},
+      {p*(2+c),p*8,p,p},
+      {p*(3+c),p*8,p,p}
+      
+    },
+    
+    move_upright = {
+      
+      {p*(0+c),p*9,p,p},
+      {p*(1+c),p*9,p,p},
+      {p*(2+c),p*9,p,p},
+      {p*(3+c),p*9,p,p}
+      
+    }
+    
+  }
+return anim

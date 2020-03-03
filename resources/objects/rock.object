@@ -1,0 +1,11 @@
+object = {
+	
+  graphic = {"objects/rock","anim"},
+	update  = function() end,
+	size    = {64,51},
+	hitbox  = {50,27},
+	wgh     = 100,
+	hp      = 200
+	
+}
+return object

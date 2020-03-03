@@ -1,0 +1,104 @@
+lang = {
+  
+  back    = "Regresar",
+  save    = "Guardar",
+  success = "Completado",
+  
+  game = {
+    
+    menu = {
+      
+      charsb  = "Pj.",
+      mapsb   = "Mapas",
+      avmaps  = "Mapas Disponibles",
+      nomaps  = "No mostrar mapa",
+      plchar  = "Personajes Jugador",
+      enchar  = "Personajes Enemigos",
+      alchar  = "Personajes Aliados",
+      conf    = "Config.",
+      confbig = "Configuraciones",
+      confgc  = "Color de la Cuadricula",
+      confglc  = "Color de las Etiquetas",
+      enc  = "Encuentros",
+      encs  = "Encuentro",
+      
+      optsg   = "Mostrar Cuadricula",
+      optsn   = "Mostrar Enumeración",
+      optco   = "Mostrar Etiquetas",
+      
+      time = {"Amanecer","Dia","Anochecer","Noche"},
+      timecycle = "Ciclo",
+      
+      camlock = "Fijar Camara",
+      
+      repwin = "Posicionar Ventana",
+      winright = "Pantalla Derecha",
+      
+      roll = "1d20"
+      
+    },
+    
+    characters = {
+      alipstate = {
+        "Alip: ",
+        "Corporeo",
+        "Incorporeo"
+      }
+    },
+    
+    calendar = {
+      "Estrella del Alba","Mes del Amanecer","Primera Semilla","Mano de Lluvia","Segunda Semilla","Mitad del Año","Culminación Solar","Ultima Semilla","Fuego del Hogar","Helada","Mes del Ocaso","Estrella Vespertina"
+    },
+    
+    week = {"Sundas","Morndas","Tirdas","Middas","Turdas","Fredas","Loredas"},
+    
+    watch = {"Días","Semanas"}
+    
+  },
+  
+  cmds = {
+    
+    help    = "Returns a list of all available commands, or more info on the specified command. (command)",
+    clear   = "Clears the console output.",
+    fotc    = "Toggles to forward output to console", 
+    sys     = "Accesses LÖVE's running functions (func). quit, restart.",
+    load    = "Interfaces the asset handler (asset type, asset data).",
+    lua     = "Executes a chunk of code as a function and stores its returned value in console.avns (code string)",
+    debug   = "Toggles whether to print debug data on-screen. Optional \"dump\" argument can be added to dump debug data to logger, or \"sublog\" to toggle whether to print repetitive data on the output (disabled upon deployment).",
+    conf    = "Changes the specified configuration value (category, value)",
+    profile = "Interfaces the profile library, this is an advanced debug facility and is disabled upon deployment (func,...).",
+    mode    = "Toggles the display of the console",
+    
+    disabled = "This function is disabled",
+    forceava = "force::available = mm, clearlog, savelog",
+    luachunk = "Chunk Executed",
+    sysava   = "sys::available = quit, restart",
+    conbig   = "Console is now big",
+    consmall = "Console is now small",
+    getvers  = "Returns the current game version",
+    entitycount = "Returns the amount of loaded entities",
+    getentityinfo = "Returns information on the selected entity.",
+    movecamera = "Moves, sets or forces the camera to the desired position",
+    
+    debug = {
+      
+      mouse    = "Mouse - x: %d; y: %d",
+      camr     = "Camera Real - x: %d; y: %d; zoom: %g; r: %g",
+      camg     = "Camera Goal - x: %d; y: %d; zoom: %g; r: %g",
+      drawc    = "Drawcalls: %s; Canvas Switches: %d",
+      txmem    = "Texture Memory: %dKB; Loaded images: %d",
+      canfon   = "Loaded canvases: %s; Loaded fonts: %d",
+      shade    = "Shader Switches: %s",
+      
+      dump     = "Dumped stats to record",
+      sublog   = "Toggled sub-logging to %t",
+      
+      active   = "Debug mode enabled",
+      deactive = "Debug mode disabled"
+      
+    }
+    
+    
+  }
+  
+}

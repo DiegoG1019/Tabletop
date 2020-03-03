@@ -1,0 +1,9 @@
+local ent = {
+  name   = "Chrom",
+  sprite = {"sprites/allchars","chrom_red"},
+  anim   = {"chrom","red"},
+  size   = {32,32},
+  color  = {255,0,0},
+}
+
+return ent

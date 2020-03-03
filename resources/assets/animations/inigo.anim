@@ -1,0 +1,604 @@
+local anim = {
+  
+  texture = "inigo",
+	framerate = .1,
+  rewind = false
+  
+}
+
+p = 32 --size of all sprites
+cl = 0 --Class sprite position offset
+c = 0 --Color sprite position offset
+
+	--red archer
+anim.archer_red = {
+    
+		normal = {
+    -- x y w h
+ 			{p*(0+c),0,0,0}
+		},
+    
+    idle = {
+      
+      {p*(0+c),p*(0+cl),p,p},
+      {p*(1+c),p*(0+cl),p,p},
+      {p*(2+c),p*(0+cl),p,p},
+      {p*(3+c),p*(0+cl),p,p},
+      
+      {p*(0+c),p*(1+cl),p,p},
+      {p*(1+c),p*(1+cl),p,p},
+      {p*(2+c),p*(1+cl),p,p},
+      {p*(3+c),p*(1+cl),p,p},
+      rewind = true,
+      
+    },
+    
+    move_left = {
+      
+      {p*(0+c),p*(2+cl),p,p},
+      {p*(1+c),p*(2+cl),p,p},
+      {p*(2+c),p*(2+cl),p,p},
+      {p*(3+c),p*(2+cl),p,p}
+      
+    },
+    
+    move_right = {
+      
+      {p*(0+c),p*(3+cl),p,p},
+      {p*(1+c),p*(3+cl),p,p},
+      {p*(2+c),p*(3+cl),p,p},
+      {p*(3+c),p*(3+cl),p,p}
+      
+    },
+    
+    move_down = {
+      
+      {p*(0+c),p*(4+cl),p,p},
+      {p*(1+c),p*(4+cl),p,p},
+      {p*(2+c),p*(4+cl),p,p},
+      {p*(3+c),p*(4+cl),p,p}
+      
+    },
+    
+    move_up = {
+      
+      {p*(0+c),p*(5+cl),p,p},
+      {p*(1+c),p*(5+cl),p,p},
+      {p*(2+c),p*(5+cl),p,p},
+      {p*(3+c),p*(5+cl),p,p}
+      
+    },
+    
+    move_downleft = {
+      
+      {p*(0+c),p*(6+cl),p,p},
+      {p*(1+c),p*(6+cl),p,p},
+      {p*(2+c),p*(6+cl),p,p},
+      {p*(3+c),p*(6+cl),p,p}
+      
+    },
+    
+    move_downright = {
+      
+      {p*(0+c),p*(7+cl),p,p},
+      {p*(1+c),p*(7+cl),p,p},
+      {p*(2+c),p*(7+cl),p,p},
+      {p*(3+c),p*(7+cl),p,p}
+      
+    },
+    
+    move_upright = {
+      
+      {p*(0+c),p*(8+cl),p,p},
+      {p*(1+c),p*(8+cl),p,p},
+      {p*(2+c),p*(8+cl),p,p},
+      {p*(3+c),p*(8+cl),p,p}
+      
+    },
+    
+    move_upleft = {
+      
+      {p*(0+c),p*(9+cl),p,p},
+      {p*(1+c),p*(9+cl),p,p},
+      {p*(2+c),p*(9+cl),p,p},
+      {p*(3+c),p*(9+cl),p,p}
+      
+    }
+    
+  }
+  --blue archer
+  c=4
+anim.archer_blue = {
+    
+		normal = {
+    -- x y w h
+ 			{p*(0+c),0,0,0}
+		},
+    
+    idle = {
+      
+      {p*(0+c),p*(0+cl),p,p},
+      {p*(1+c),p*(0+cl),p,p},
+      {p*(2+c),p*(0+cl),p,p},
+      {p*(3+c),p*(0+cl),p,p},
+      
+      {p*(0+c),p*(1+cl),p,p},
+      {p*(1+c),p*(1+cl),p,p},
+      {p*(2+c),p*(1+cl),p,p},
+      {p*(3+c),p*(1+cl),p,p},
+      
+      rewind = true
+      
+    },
+    
+    move_left = {
+      
+      {p*(0+c),p*(2+cl),p,p},
+      {p*(1+c),p*(2+cl),p,p},
+      {p*(2+c),p*(2+cl),p,p},
+      {p*(3+c),p*(2+cl),p,p}
+      
+    },
+    
+    move_right = {
+      
+      {p*(0+c),p*(3+cl),p,p},
+      {p*(1+c),p*(3+cl),p,p},
+      {p*(2+c),p*(3+cl),p,p},
+      {p*(3+c),p*(3+cl),p,p}
+      
+    },
+    
+    move_down = {
+      
+      {p*(0+c),p*(4+cl),p,p},
+      {p*(1+c),p*(4+cl),p,p},
+      {p*(2+c),p*(4+cl),p,p},
+      {p*(3+c),p*(4+cl),p,p}
+      
+    },
+    
+    move_up = {
+      
+      {p*(0+c),p*(5+cl),p,p},
+      {p*(1+c),p*(5+cl),p,p},
+      {p*(2+c),p*(5+cl),p,p},
+      {p*(3+c),p*(5+cl),p,p}
+      
+    },
+    
+    move_downleft = {
+      
+      {p*(0+c),p*(6+cl),p,p},
+      {p*(1+c),p*(6+cl),p,p},
+      {p*(2+c),p*(6+cl),p,p},
+      {p*(3+c),p*(6+cl),p,p}
+      
+    },
+    
+    move_downright = {
+      
+      {p*(0+c),p*(7+cl),p,p},
+      {p*(1+c),p*(7+cl),p,p},
+      {p*(2+c),p*(7+cl),p,p},
+      {p*(3+c),p*(7+cl),p,p}
+      
+    },
+    
+    move_upright = {
+      
+      {p*(0+c),p*(8+cl),p,p},
+      {p*(1+c),p*(8+cl),p,p},
+      {p*(2+c),p*(8+cl),p,p},
+      {p*(3+c),p*(8+cl),p,p}
+      
+    },
+    
+    move_upleft = {
+      
+      {p*(0+c),p*(9+cl),p,p},
+      {p*(1+c),p*(9+cl),p,p},
+      {p*(2+c),p*(9+cl),p,p},
+      {p*(3+c),p*(9+cl),p,p}
+      
+    }
+    
+  }
+  
+  --green archer
+  c=8
+anim.archer_green = {
+    
+		normal = {
+    -- x y w h
+ 			{p*(0+c),0,0,0}
+		},
+    
+    idle = {
+      
+      {p*(0+c),p*(0+cl),p,p},
+      {p*(1+c),p*(0+cl),p,p},
+      {p*(2+c),p*(0+cl),p,p},
+      {p*(3+c),p*(0+cl),p,p},
+      
+      {p*(0+c),p*(1+cl),p,p},
+      {p*(1+c),p*(1+cl),p,p},
+      {p*(2+c),p*(1+cl),p,p},
+      {p*(3+c),p*(1+cl),p,p},
+      
+      rewind = true
+      
+    },
+    
+    move_left = {
+      
+      {p*(0+c),p*(2+cl),p,p},
+      {p*(1+c),p*(2+cl),p,p},
+      {p*(2+c),p*(2+cl),p,p},
+      {p*(3+c),p*(2+cl),p,p}
+      
+    },
+    
+    move_right = {
+      
+      {p*(0+c),p*(3+cl),p,p},
+      {p*(1+c),p*(3+cl),p,p},
+      {p*(2+c),p*(3+cl),p,p},
+      {p*(3+c),p*(3+cl),p,p}
+      
+    },
+    
+    move_down = {
+      
+      {p*(0+c),p*(4+cl),p,p},
+      {p*(1+c),p*(4+cl),p,p},
+      {p*(2+c),p*(4+cl),p,p},
+      {p*(3+c),p*(4+cl),p,p}
+      
+    },
+    
+    move_up = {
+      
+      {p*(0+c),p*(5+cl),p,p},
+      {p*(1+c),p*(5+cl),p,p},
+      {p*(2+c),p*(5+cl),p,p},
+      {p*(3+c),p*(5+cl),p,p}
+      
+    },
+    
+    move_downleft = {
+      
+      {p*(0+c),p*(6+cl),p,p},
+      {p*(1+c),p*(6+cl),p,p},
+      {p*(2+c),p*(6+cl),p,p},
+      {p*(3+c),p*(6+cl),p,p}
+      
+    },
+    
+    move_downright = {
+      
+      {p*(0+c),p*(7+cl),p,p},
+      {p*(1+c),p*(7+cl),p,p},
+      {p*(2+c),p*(7+cl),p,p},
+      {p*(3+c),p*(7+cl),p,p}
+      
+    },
+    
+    move_upright = {
+      
+      {p*(0+c),p*(8+cl),p,p},
+      {p*(1+c),p*(8+cl),p,p},
+      {p*(2+c),p*(8+cl),p,p},
+      {p*(3+c),p*(8+cl),p,p}
+      
+    },
+    
+    move_upleft = {
+      
+      {p*(0+c),p*(9+cl),p,p},
+      {p*(1+c),p*(9+cl),p,p},
+      {p*(2+c),p*(9+cl),p,p},
+      {p*(3+c),p*(9+cl),p,p}
+      
+    }
+    
+  }
+  
+  c=0
+  cl=10
+  --red mercenary
+anim.mercenary_red = {
+    
+		normal = {
+    -- x y w h
+ 			{p*(0+c),0,0,0}
+		},
+    
+    idle = {
+      
+      {p*(0+c),p*(0+cl),p,p},
+      {p*(1+c),p*(0+cl),p,p},
+      {p*(2+c),p*(0+cl),p,p},
+      {p*(3+c),p*(0+cl),p,p},
+      
+      {p*(0+c),p*(1+cl),p,p},
+      {p*(1+c),p*(1+cl),p,p},
+      {p*(2+c),p*(1+cl),p,p},
+      {p*(3+c),p*(1+cl),p,p},
+      
+      rewind = true
+      
+    },
+    
+    move_left = {
+      
+      {p*(0+c),p*(2+cl),p,p},
+      {p*(1+c),p*(2+cl),p,p},
+      {p*(2+c),p*(2+cl),p,p},
+      {p*(3+c),p*(2+cl),p,p}
+      
+    },
+    
+    move_right = {
+      
+      {p*(0+c),p*(3+cl),p,p},
+      {p*(1+c),p*(3+cl),p,p},
+      {p*(2+c),p*(3+cl),p,p},
+      {p*(3+c),p*(3+cl),p,p}
+      
+    },
+    
+    move_down = {
+      
+      {p*(0+c),p*(4+cl),p,p},
+      {p*(1+c),p*(4+cl),p,p},
+      {p*(2+c),p*(4+cl),p,p},
+      {p*(3+c),p*(4+cl),p,p}
+      
+    },
+    
+    move_up = {
+      
+      {p*(0+c),p*(5+cl),p,p},
+      {p*(1+c),p*(5+cl),p,p},
+      {p*(2+c),p*(5+cl),p,p},
+      {p*(3+c),p*(5+cl),p,p}
+      
+    },
+    
+    move_downleft = {
+      
+      {p*(0+c),p*(6+cl),p,p},
+      {p*(1+c),p*(6+cl),p,p},
+      {p*(2+c),p*(6+cl),p,p},
+      {p*(3+c),p*(6+cl),p,p}
+      
+    },
+    
+    move_downright = {
+      
+      {p*(0+c),p*(7+cl),p,p},
+      {p*(1+c),p*(7+cl),p,p},
+      {p*(2+c),p*(7+cl),p,p},
+      {p*(3+c),p*(7+cl),p,p}
+      
+    },
+    
+    move_upleft = {
+      
+      {p*(0+c),p*(8+cl),p,p},
+      {p*(1+c),p*(8+cl),p,p},
+      {p*(2+c),p*(8+cl),p,p},
+      {p*(3+c),p*(8+cl),p,p}
+      
+    },
+    
+    move_upright = {
+      
+      {p*(0+c),p*(9+cl),p,p},
+      {p*(1+c),p*(9+cl),p,p},
+      {p*(2+c),p*(9+cl),p,p},
+      {p*(3+c),p*(9+cl),p,p}
+      
+    }
+    
+  }
+  --blue mercenary
+  c=4
+anim.mercenary_blue = {
+    
+		normal = {
+    -- x y w h
+ 			{p*(0+c),0,0,0},
+		},
+    
+    idle = {
+      
+      {p*(0+c),p*(0+cl),p,p},
+      {p*(1+c),p*(0+cl),p,p},
+      {p*(2+c),p*(0+cl),p,p},
+      {p*(3+c),p*(0+cl),p,p},
+      
+      {p*(0+c),p*(1+cl),p,p},
+      {p*(1+c),p*(1+cl),p,p},
+      {p*(2+c),p*(1+cl),p,p},
+      {p*(3+c),p*(1+cl),p,p},
+      
+      rewind = true
+      
+    },
+    
+    move_left = {
+      
+      {p*(0+c),p*(2+cl),p,p},
+      {p*(1+c),p*(2+cl),p,p},
+      {p*(2+c),p*(2+cl),p,p},
+      {p*(3+c),p*(2+cl),p,p}
+      
+    },
+    
+    move_right = {
+      
+      {p*(0+c),p*(3+cl),p,p},
+      {p*(1+c),p*(3+cl),p,p},
+      {p*(2+c),p*(3+cl),p,p},
+      {p*(3+c),p*(3+cl),p,p}
+      
+    },
+    
+    move_down = {
+      
+      {p*(0+c),p*(4+cl),p,p},
+      {p*(1+c),p*(4+cl),p,p},
+      {p*(2+c),p*(4+cl),p,p},
+      {p*(3+c),p*(4+cl),p,p}
+      
+    },
+    
+    move_up = {
+      
+      {p*(0+c),p*(5+cl),p,p},
+      {p*(1+c),p*(5+cl),p,p},
+      {p*(2+c),p*(5+cl),p,p},
+      {p*(3+c),p*(5+cl),p,p}
+      
+    },
+    
+    move_downleft = {
+      
+      {p*(0+c),p*(6+cl),p,p},
+      {p*(1+c),p*(6+cl),p,p},
+      {p*(2+c),p*(6+cl),p,p},
+      {p*(3+c),p*(6+cl),p,p}
+      
+    },
+    
+    move_downright = {
+      
+      {p*(0+c),p*(7+cl),p,p},
+      {p*(1+c),p*(7+cl),p,p},
+      {p*(2+c),p*(7+cl),p,p},
+      {p*(3+c),p*(7+cl),p,p}
+      
+    },
+    
+    move_upleft = {
+      
+      {p*(0+c),p*(8+cl),p,p},
+      {p*(1+c),p*(8+cl),p,p},
+      {p*(2+c),p*(8+cl),p,p},
+      {p*(3+c),p*(8+cl),p,p}
+      
+    },
+    
+    move_upright = {
+      
+      {p*(0+c),p*(9+cl),p,p},
+      {p*(1+c),p*(9+cl),p,p},
+      {p*(2+c),p*(9+cl),p,p},
+      {p*(3+c),p*(9+cl),p,p}
+      
+    }
+    
+  }
+  
+  --green mercenary
+  c=8
+anim.mercenary_green = {
+    
+		normal = {
+    -- x y w h
+ 			{p*(0+c),0,0,0}
+		},
+    
+    idle = {
+      
+      {p*(0+c),p*(0+cl),p,p},
+      {p*(1+c),p*(0+cl),p,p},
+      {p*(2+c),p*(0+cl),p,p},
+      {p*(3+c),p*(0+cl),p,p},
+      
+      {p*(0+c),p*(1+cl),p,p},
+      {p*(1+c),p*(1+cl),p,p},
+      {p*(2+c),p*(1+cl),p,p},
+      {p*(3+c),p*(1+cl),p,p},
+      
+      rewind = true
+      
+    },
+    
+    move_left = {
+      
+      {p*(0+c),p*(2+cl),p,p},
+      {p*(1+c),p*(2+cl),p,p},
+      {p*(2+c),p*(2+cl),p,p},
+      {p*(3+c),p*(2+cl),p,p}
+      
+    },
+    
+    move_right = {
+      
+      {p*(0+c),p*(3+cl),p,p},
+      {p*(1+c),p*(3+cl),p,p},
+      {p*(2+c),p*(3+cl),p,p},
+      {p*(3+c),p*(3+cl),p,p}
+      
+    },
+    
+    move_down = {
+      
+      {p*(0+c),p*(4+cl),p,p},
+      {p*(1+c),p*(4+cl),p,p},
+      {p*(2+c),p*(4+cl),p,p},
+      {p*(3+c),p*(4+cl),p,p}
+      
+    },
+    
+    move_up = {
+      
+      {p*(0+c),p*(5+cl),p,p},
+      {p*(1+c),p*(5+cl),p,p},
+      {p*(2+c),p*(5+cl),p,p},
+      {p*(3+c),p*(5+cl),p,p}
+      
+    },
+    
+    move_downleft = {
+      
+      {p*(0+c),p*(6+cl),p,p},
+      {p*(1+c),p*(6+cl),p,p},
+      {p*(2+c),p*(6+cl),p,p},
+      {p*(3+c),p*(6+cl),p,p}
+      
+    },
+    
+    move_downright = {
+      
+      {p*(0+c),p*(7+cl),p,p},
+      {p*(1+c),p*(7+cl),p,p},
+      {p*(2+c),p*(7+cl),p,p},
+      {p*(3+c),p*(7+cl),p,p}
+      
+    },
+    
+    move_upleft = {
+      
+      {p*(0+c),p*(8+cl),p,p},
+      {p*(1+c),p*(8+cl),p,p},
+      {p*(2+c),p*(8+cl),p,p},
+      {p*(3+c),p*(8+cl),p,p}
+      
+    },
+    
+    move_upright = {
+      
+      {p*(0+c),p*(9+cl),p,p},
+      {p*(1+c),p*(9+cl),p,p},
+      {p*(2+c),p*(9+cl),p,p},
+      {p*(3+c),p*(9+cl),p,p}
+      
+    }
+    
+  }
+  
+return anim

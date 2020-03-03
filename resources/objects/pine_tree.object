@@ -1,0 +1,11 @@
+object = {
+	
+  graphic = {"objects/pine_tree","anim"},
+	update  = function() end,
+	size    = {98,140},
+  hitbox  = {68,30},
+	wgh     = 0,
+	hp      = 150
+	
+}
+return object

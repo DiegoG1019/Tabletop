@@ -1,0 +1,11 @@
+object = {
+	
+  graphic = {"gate","model"},
+	update  = function() end,
+	size    = {164,104},
+  hitbox  = {164,104},
+	wgh     = 0,
+	hp      = 150
+	
+}
+return object

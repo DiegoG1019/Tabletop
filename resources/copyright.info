@@ -1,0 +1,2 @@
+main.copyright.header = " Copyright, 2017 "..main.author.name.."; contact: "..main.author.contact
+main.copyright.fullnotice = [[]]

@@ -1,0 +1,200 @@
+local s = 32 --size offset
+local c = 0  --color offset
+local k = 0  --character offset
+
+--This helps organize the sprites calls
+
+local allchars = {}
+
+k=0;c=0
+allchars.anna_red  = {s*k,s*(c),s,s}
+c=1
+allchars.anna_blue  = {s*k,s*(c),s,s}
+c=2
+allchars.anna_green  = {s*k,s*(c),s,s}
+
+k=1;c=0
+allchars.brady_red  = {s*k,s*(c),s,s}
+c=1
+allchars.brady_blue  = {s*k,s*(c),s,s}
+c=2
+allchars.brady_green  = {s*k,s*(c),s,s}
+
+k=2;c=0
+allchars.chrom_red  = {s*k,s*(c),s,s}
+c=1
+allchars.chrom_blue  = {s*k,s*(c),s,s}
+c=2
+allchars.chrom_green  = {s*k,s*(c),s,s}
+
+k=3;c=0
+allchars.donnel_red  = {s*k,s*(c),s,s}
+c=1
+allchars.donnel_blue  = {s*k,s*(c),s,s}
+c=2
+allchars.donnel_green  = {s*k,s*(c),s,s}
+
+k=4;c=0
+allchars.flavia_red  = {s*k,s*(c),s,s}
+c=1
+allchars.flavia_blue  = {s*k,s*(c),s,s}
+c=2
+allchars.flavia_green  = {s*k,s*(c),s,s}
+
+k=5;c=0
+allchars.frederick_red  = {s*k,s*(c),s,s}
+c=1
+allchars.frederick_blue  = {s*k,s*(c),s,s}
+c=2
+allchars.frederick_green  = {s*k,s*(c),s,s}
+
+k=6;c=0
+allchars.gaius_assassin_red  = {s*k,s*(c),s,s}
+c=1
+allchars.gaius_assassin_blue  = {s*k,s*(c),s,s}
+c=2
+allchars.gaius_assassin_green  = {s*k,s*(c),s,s}
+
+k=7;c=0
+allchars.gaius_thief_red  = {s*k,s*(c),s,s}
+c=1
+allchars.gaius_thief_blue  = {s*k,s*(c),s,s}
+c=2
+allchars.gaius_thief_green  = {s*k,s*(c),s,s}
+
+k=8;c=0
+allchars.henry_red  = {s*k,s*(c),s,s}
+c=1
+allchars.henry_blue  = {s*k,s*(c),s,s}
+c=2
+allchars.henry_green  = {s*k,s*(c),s,s}
+
+k=9;c=0
+allchars.inigo_archer_red  = {s*k,s*(c),s,s}
+c=1
+allchars.inigo_archer_blue  = {s*k,s*(c),s,s}
+c=2
+allchars.inigo_archer_green  = {s*k,s*(c),s,s}
+
+k=10;c=0
+allchars.inigo_mercenary_red  = {s*k,s*(c),s,s}
+c=1
+allchars.inigo_mercenary_blue  = {s*k,s*(c),s,s}
+c=2
+allchars.inigo_mercenary_green  = {s*k,s*(c),s,s}
+
+k=11;c=0
+allchars.lucina_red  = {s*k,s*(c),s,s}
+c=1
+allchars.lucina_blue  = {s*k,s*(c),s,s}
+c=2
+allchars.lucina_green  = {s*k,s*(c),s,s}
+
+k=12;c=0
+allchars.miriel_red  = {s*k,s*(c),s,s}
+c=1
+allchars.miriel_blue  = {s*k,s*(c),s,s}
+c=2
+allchars.miriel_green  = {s*k,s*(c),s,s}
+
+k=13;c=0
+allchars.noire_red  = {s*k,s*(c),s,s}
+c=1
+allchars.noire_blue  = {s*k,s*(c),s,s}
+c=2
+allchars.noire_green  = {s*k,s*(c),s,s}
+
+k=14;c=0
+allchars.owain_assassin_red  = {s*k,s*(c),s,s}
+c=1
+allchars.owain_assassin_blue  = {s*k,s*(c),s,s}
+c=2
+allchars.owain_assassin_green  = {s*k,s*(c),s,s}
+
+k=15;c=0
+allchars.owain_swordmaster_red  = {s*k,s*(c),s,s}
+c=1
+allchars.owain_swordmaster_blue  = {s*k,s*(c),s,s}
+c=2
+allchars.owain_swordmaster_green  = {s*k,s*(c),s,s}
+
+k=16;c=0
+allchars.owain_swordsman_red  = {s*k,s*(c),s,s}
+c=1
+allchars.owain_swordsman_blue  = {s*k,s*(c),s,s}
+c=2
+allchars.owain_swordsman_green  = {s*k,s*(c),s,s}
+
+k=17;c=0
+allchars.priam_red  = {s*k,s*(c),s,s}
+c=1
+allchars.priam_blue  = {s*k,s*(c),s,s}
+c=2
+allchars.priam_green  = {s*k,s*(c),s,s}
+
+k=18;c=0
+allchars.ricken_mage_red  = {s*k,s*(c),s,s}
+c=1
+allchars.ricken_mage_blue  = {s*k,s*(c),s,s}
+c=2
+allchars.ricken_mage_green  = {s*k,s*(c),s,s}
+
+k=19;c=0
+allchars.ricken_sage_red  = {s*k,s*(c),s,s}
+c=1
+allchars.ricken_sage_blue  = {s*k,s*(c),s,s}
+c=2
+allchars.ricken_sage_green  = {s*k,s*(c),s,s}
+
+k=20;c=0
+allchars.severa_assassin_red  = {s*k,s*(c),s,s}
+c=1
+allchars.severa_assassin_blue  = {s*k,s*(c),s,s}
+c=2
+allchars.severa_assassin_green  = {s*k,s*(c),s,s}
+
+k=21;c=0
+allchars.severa_healer_red  = {s*k,s*(c),s,s}
+c=1
+allchars.severa_healer_blue  = {s*k,s*(c),s,s}
+c=2
+allchars.severa_healer_green  = {s*k,s*(c),s,s}
+
+k=22;c=0
+allchars.severa_knight_red  = {s*k,s*(c),s,s}
+c=1
+allchars.severa_knight_blue  = {s*k,s*(c),s,s}
+c=2
+allchars.severa_knight_green  = {s*k,s*(c),s,s}
+
+k=23;c=0
+allchars.severa_mercenary_red  = {s*k,s*(c),s,s}
+c=1
+allchars.severa_mercenary_blue  = {s*k,s*(c),s,s}
+c=2
+allchars.severa_mercenary_green  = {s*k,s*(c),s,s}
+
+k=24;c=0
+allchars.vaike_red  = {s*k,s*(c),s,s}
+c=1
+allchars.vaike_blue  = {s*k,s*(c),s,s}
+c=2
+allchars.vaike_green  = {s*k,s*(c),s,s}
+
+k=25;c=0
+allchars.virion_red  = {s*k,s*(c),s,s}
+c=1
+allchars.virion_blue  = {s*k,s*(c),s,s}
+c=2
+allchars.virion_green  = {s*k,s*(c),s,s}
+
+k=26;c=0
+allchars.yenfay_red  = {s*k,s*(c),s,s}
+c=1
+allchars.yenfay_blue  = {s*k,s*(c),s,s}
+c=2
+allchars.yenfay_green  = {s*k,s*(c),s,s}
+
+
+
+return allchars
